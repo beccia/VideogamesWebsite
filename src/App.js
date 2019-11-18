@@ -1,5 +1,9 @@
 import React from 'react';
+import { Component} from 'react';
 import logo from './logo.svg';
+import { Route } from 'react-router-dom';
+import Home from './components/Home';
+import Reviews from './components/Reviews';
 import './App.css';
 
 class App extends Component {
@@ -12,15 +16,10 @@ class App extends Component {
         </p>
 
         <Route exact path="/" component={Home} />
+        <Route exact path="/reviews" component={Reviews} />
+       
 
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
       </header>
     </div>
   );
