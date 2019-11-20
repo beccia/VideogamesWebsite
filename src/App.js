@@ -5,6 +5,7 @@ import { Route } from 'react-router-dom';
 import Home from './components/Home';
 import ReviewContainer from './components/ReviewContainer';
 import ArticleContainer from './components/ArticleContainer';
+import Yakuza_0 from './components/reviews/Yakuza_0'
 import './App.css';
 
 class App extends Component {
@@ -18,6 +19,9 @@ class App extends Component {
 
         <Route exact path="/" component={Home} />
         <Route exact path="/reviews" component={ReviewContainer} />
+        <Route exact path="/components/reviews/Yakuza_0" component={Yakuza_0} />
+
+
         <Route exact path="/articles" component={ArticleContainer} />
        
 
