@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom';
 
 class ReviewContainer extends Component {
     state = {
-        reviews: [{title: "Yakuza_0"}]
+        reviews: [{title: "Yakuza_0"}, {title: "Dragon_Quest_XI"} ]
     }
 
     render() {

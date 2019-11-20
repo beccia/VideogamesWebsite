@@ -6,7 +6,7 @@ function SelectionImage (props) {
 {
         return (
             <div>
-                <Link to={`./components/reviews/${props.title}`}><img src={require(`../images/${props.title}.jpg`)}></img></Link>
+                <Link to={`./components/reviews/${props.title}`}><img className="selection-img" src={require(`../images/${props.title}.jpg`)}></img></Link>
             </div>
         );
     }

@@ -6,7 +6,7 @@
   height: 40vmin;
 }
 
-.App-header {
+.App-main {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -17,7 +17,30 @@
   color: white;
 }
 
-.home{
-
+.header{
+  color: rgb(119, 22, 59);
+  font-size: 130%;
 }
 
+.home {
+color: rgb(71, 17, 42);
+}
+
+
+.review-header-img {
+  height: 450px;
+}
+
+.selection-img {
+  height: 200px;
+}
+
+.top-nav{
+  float: left;
+  background-color: rgb(119, 22, 59);
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
