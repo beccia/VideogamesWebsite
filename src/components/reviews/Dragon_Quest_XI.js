@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
+import Header from '../Header';
 
-class Yakuza_0 extends Component {
+class Dragon_Quest_XI extends Component {
     render() {
         return (
             <div>
+                <Header text="Dragon Quest XI review"/>
                 <img src={require("../../images/Dragon_Quest_XI.jpg")}></img>
-                Dragon Quest XI
             </div>
         );
     }
 }
 
-export default Yakuza_0;
+export default Dragon_Quest_XI;

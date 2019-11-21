@@ -27,16 +27,25 @@ color: rgb(71, 17, 42);
 }
 
 
+
+.nav-item{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .review-header-img {
   height: 450px;
 }
 
 .selection-img {
-  height: 200px;
+  height: 260px;
+  object-fit: contain;
 }
 
-.top-nav{
-  float: left;
+.topbar{
+  position: fixed;
+  top: 0;
+  width: 100%;
   background-color: rgb(119, 22, 59);
   color: #f2f2f2;
   text-align: center;

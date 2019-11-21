@@ -5,7 +5,7 @@ import { Route } from 'react-router-dom';
 import Home from './components/Home';
 import ReviewContainer from './components/ReviewContainer';
 import ArticleContainer from './components/ArticleContainer';
-import Dragon_Quest_XI from './components/reviews/Yakuza_0';
+import Dragon_Quest_XI from './components/reviews/Dragon_Quest_XI';
 import Yakuza_0 from './components/reviews/Yakuza_0';
 import NavBar from './components/NavBar';
 import './App.css';
