@@ -35,7 +35,7 @@ class ReviewContainer extends Component {
 <GridList cellHeight={260} className="gridList">
   {this.state.reviews.map(review => (
     <GridListTile key={review.title}>
-      <SelectionImage title={review.title}/>
+      <SelectionImage title={review.title} domain="reviews"/>
       <GridListTileBar 
         title={review.name}
         subtitle={<span> review</span>}

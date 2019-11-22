@@ -7,6 +7,7 @@ import ReviewContainer from './components/ReviewContainer';
 import ArticleContainer from './components/ArticleContainer';
 import Dragon_Quest_XI from './components/reviews/Dragon_Quest_XI';
 import Yakuza_0 from './components/reviews/Yakuza_0';
+import State_of_the_games_industry from './components/articles/State_of_the_games_industry'
 import NavBar from './components/NavBar';
 import './App.css';
 
@@ -23,7 +24,7 @@ class App extends Component {
 
 
         <Route exact path="/articles" component={ArticleContainer} />
-       
+        <Route exact path="/components/articles/State_of_the_games_industry" component={State_of_the_games_industry} />
 
 
       </div>
