@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Review from './Review';
+import Review from './Article';
 import Header from './Header';
 import SelectionImage from './SelectionImage';
 import {Link} from 'react-router-dom';

@@ -1,0 +1,11 @@
+{  "articles" : [
+        { "title":"So_what_about_Death_Stranding",
+        "name": "So, what about Death Stranding?"},
+        { "title":"state_of_the_games_industry",
+            "name": "The state of the games industry"},
+        {"title": "Yakuza_0",
+         "name": "Yakuza 0" },
+        {"title": "Dragon_Quest_XI",
+        "name": "Dragon Quest XI"}
+    ]
+}

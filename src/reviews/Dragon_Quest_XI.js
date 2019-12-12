@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import Header from '../Header';
+import Article from '../components/Article';
 
 class Dragon_Quest_XI extends Component {
     render() {
         return (
             <div>
-                <Header text="Dragon Quest XI review"/>
-                <img src={require("../../images/Dragon_Quest_XI.jpg")}></img>
+                <Article name="Dragon Quest XI review" title="Dragon_Quest_XI"></Article>
             </div>
         );
     }

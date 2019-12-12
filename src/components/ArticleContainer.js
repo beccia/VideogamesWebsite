@@ -11,8 +11,10 @@ class ArticleContainer extends Component {
     state = {
         articles: [{
             title: "state_of_the_games_industry",
-            name: "The state of the games industry"
-        }]
+            name: "The state of the games industry"}, 
+        {title: "So_what_about_Death_Stranding",
+        name: "So, what about Death Stranding?"
+      }]
     }
 
     render() {

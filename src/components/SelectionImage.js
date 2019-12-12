@@ -2,11 +2,11 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 
-function SelectionImage (props) {
+const SelectionImage = (props) => {
 {
         return (
             <div>
-                <Link to={`./components/${props.domain}/${props.title}`}><img className="selection-img" src={require(`../images/${props.title}.jpg`)}></img></Link>
+                <Link to={`./${props.domain}/${props.title}`}><img className="selection-img" src={require(`../images/${props.title}.jpg`)}></img></Link>
             </div>
         );
     }
