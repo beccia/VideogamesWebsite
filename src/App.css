@@ -18,21 +18,82 @@
   color: white;
 }
 
-.header{
+.article {
+  display:flexbox;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.footer {
+  background-color: rgb(90, 14, 43);
+  color: rgb(238, 202, 217);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 11px;
+}
+
+.header {
   color: rgb(119, 22, 59);
-  font-size: 130%;
+  font-size: 23px;
+  padding-bottom: 40px;
 }
 
 .home {
-color: rgb(141, 49, 92);
+color: rgb(110, 22, 56);
 }
 
-.link-mainpage, .link-mainpage:visited{
+.homeheader {
+  border: 2px;
+  margin: 40px;
+  padding-top: 20px;
+  padding-left: 240px;
+  padding-right: 240px;
+  padding-bottom: 8px;
+  font-size: 1.2em;
+}
+
+.homepage-mainbody {
+  display:flexbox;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 2px;
+  margin: 10px;
+  max-width: 572px;
+  padding-top: 48px;
+  padding-left: 160px;
+  padding-right: 160px;
+  padding-bottom: 20px;
+  margin-bottom: 60px;
+  border-style: solid;
+  border-color: rgb(37, 4, 56);
+  border-radius: 25px;
+  background-color: rgb(238, 202, 217);
+  /* rgb(219, 221, 185); */
+    font-family: Lucida, sans-serif;
+  /* font-family: Palatino, URW Palladio L, serif; */
+  font-size: 21px;
+}
+
+.insidetext {
+word-wrap: break-word;
+
+}
+
+.link-mainpage, .link-mainpage:visited {
   text-decoration: none;
   color: inherit;
+  margin: 30px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding-bottom: 180px;
 }
 
-.nav-item, .nav-item:visited{
+.nav-item, .nav-item:visited {
   padding-left: 15px;
   padding-right: 15px;
   color: inherit;
@@ -42,6 +103,31 @@ color: rgb(141, 49, 92);
 .article-header-img {
   max-height: 450px;
   min-height: 300px;
+}
+
+.sectionimagetext {
+  z-index: 100;
+  position: absolute; 
+   top: 68px; 
+   left: 0; 
+   width: 66%; 
+   font-size: 22px;
+   color: rgb(167, 29, 98);
+}
+
+.sectionselect {
+  position: relative; 
+  width: 100%;
+}
+
+.sectionselect-img {
+  height: 180px;
+  width: 290px;
+  margin-bottom: 20px;
+  object-fit: cover;
+  border-style: solid;
+  border-color: rgb(37, 4, 56);
+  border-radius: 25px;
 }
 
 .selection-img {
@@ -59,4 +145,8 @@ color: rgb(141, 49, 92);
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+}
+
+p {
+color: rgb(85, 14, 49);
 }

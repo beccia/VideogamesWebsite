@@ -13,7 +13,7 @@ class Article extends Component {
                     return item.title == handle
                 }).map(title => {
                     return <div>
-                        <h1>
+                        <h1 className="header">
                             <Header text={title.name}/>
                         </h1>
                         <img className="article-header-img" src={require(`../images/${title.title}.jpg`)}></img>

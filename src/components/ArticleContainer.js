@@ -15,20 +15,20 @@ class ArticleContainer extends Component {
       const {handle} = this.props.match.params;
         return (
             <div>
-<Header text={handle.toUpperCase()}/>
-<br/>
-<GridList cellHeight={260} className="gridList">
-  {this.state.articles.filter(item => item.type == handle).map(article=> (
-    <GridListTile key={article.title}>
-      <SelectionImage title={article.title} domain={handle}/>
-      <GridListTileBar 
-        title={article.name}
-        subtitle={article.subtitle}
-      />
-    </GridListTile>
-  ))}
-</GridList>
-</div>
+              <div className="header">
+                <h1>
+                  <Header text={handle.toUpperCase()}/>
+                </h1>
+              </div>
+              <br/>
+              <GridList cellHeight={260} className="gridList">
+                {this.state.articles.filter(item => item.type == handle).map(article=> (
+                <GridListTile key={article.title}>
+                  <SelectionImage title={article.title} domain={handle}/>
+                  <GridListTileBar title={article.name} subtitle={article.subtitle}/>
+                </GridListTile>))}
+              </GridList>
+              </div>
         );
     }
 }
