@@ -6,39 +6,24 @@ import { makeStyles } from '@material-ui/core/styles';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
+import data from '../data/data.json';
 
 class ArticleContainer extends Component {
-    state = {
-        articles: [{
-            title: "state_of_the_games_industry",
-            name: "The state of the games industry"}, 
-        {title: "So_what_about_Death_Stranding",
-        name: "So, what about Death Stranding?"
-      }]
-    }
+    state = data
 
     render() {
+      const {handle} = this.props.match.params;
         return (
-            // <div>
-            //     <Header text="Articles"/>
-            // <div>
-            //     {this.state.articles.map( article => {
-            //          return <SelectionImage title={article.title}/>
-            //     })}
-            //     </div>
-                
-            // </div>
-
             <div>
-<Header text="Articles"/>
+<Header text={handle.toUpperCase()}/>
 <br/>
 <GridList cellHeight={260} className="gridList">
-  {this.state.articles.map(article=> (
+  {this.state.articles.filter(item => item.type == handle).map(article=> (
     <GridListTile key={article.title}>
-      <SelectionImage title={article.title} domain="articles"/>
+      <SelectionImage title={article.title} domain={handle}/>
       <GridListTileBar 
         title={article.name}
-        subtitle={<span> article</span>}
+        subtitle={article.subtitle}
       />
     </GridListTile>
   ))}
@@ -47,4 +32,5 @@ class ArticleContainer extends Component {
         );
     }
 }
+
 export default ArticleContainer;

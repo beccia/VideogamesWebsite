@@ -4,7 +4,6 @@ import logo from './logo.svg';
 import { Route } from 'react-router-dom';
 import Home from './components/Home';
 import Article from './components/Article';
-import ReviewContainer from './components/ReviewContainer';
 import ArticleContainer from './components/ArticleContainer';
 import Dragon_Quest_XI from './reviews/Dragon_Quest_XI';
 import Yakuza_0 from './reviews/Yakuza_0';
@@ -20,17 +19,9 @@ class App extends Component {
         <NavBar/>
 
         <Route exact path="/" component={Home} />
-        <Route exact path="/reviews" component={ReviewContainer} />
-        <Route exact path="/reviews/Yakuza_0" component={Yakuza_0} />
-        <Route exact path="/reviews/Dragon_Quest_XI" component={Dragon_Quest_XI} />
-
-
-        <Route exact path="/articles" component={ArticleContainer} />
-        <Route exact path="/articles/State_of_the_games_industry" component={State_of_the_games_industry} />
-        <Route exact path="/articles/So_what_about_Death_Stranding" component={So_what_about_Death_Stranding} />
-
-
-
+        <Route exact path='/:handle' component={ArticleContainer} />
+        <Route exact path="/reviews/:handle" component={Article} />
+        <Route exact path="/articles/:handle" component={Article} />
       </div>
     </div>
   );

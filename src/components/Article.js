@@ -5,12 +5,12 @@ import data from '../data/data.json';
 class Article extends Component {
     state = data;
 
-
     render() {
+        const {handle} = this.props.match.params;
         return (
             <div className ="article">
                 {this.state.articles.filter( item => {
-                    return item.title == this.props.title
+                    return item.title == handle
                 }).map(title => {
                     return <div>
                         <h1>

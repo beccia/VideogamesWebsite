@@ -1,11 +1,19 @@
 {  "articles" : [
-        { "title":"So_what_about_Death_Stranding",
+        { "type":"articles",
+            "title":"So_what_about_Death_Stranding",
+            "subtitle": "Genius masterwork or pretentious crap? ",
         "name": "So, what about Death Stranding?"},
-        { "title":"state_of_the_games_industry",
+        { "type":"articles", 
+            "title":"state_of_the_games_industry",
+            "subtitle": "Can there be too much?",
             "name": "The state of the games industry"},
-        {"title": "Yakuza_0",
+        {"type":"reviews",
+            "title": "Yakuza_0",
+            "subtitle": "Streetfights, karaoke & hostess clubs",
          "name": "Yakuza 0" },
-        {"title": "Dragon_Quest_XI",
+        {"type":"reviews",
+            "title": "Dragon_Quest_XI",
+            "subtitle": "As classic JRPG as it can get",
         "name": "Dragon Quest XI"}
     ]
 }
