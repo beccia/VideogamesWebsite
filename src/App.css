@@ -24,6 +24,56 @@
   justify-content: space-evenly;
 }
 
+.article-header-img {
+  max-height: 450px;
+  min-height: 300px;
+  border-style: double;
+  border-block-width: 1px;
+  border-color: black;
+}
+
+.article-img {
+  max-height: 340px;
+  border-block-width: 1px;
+  border-color: black;
+}
+
+.article-main-body {
+  background-color: #31353d;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 28px;
+  padding-left: 160px;
+  padding-right: 160px;
+  padding-bottom: 20px;
+  margin-bottom: 76px;
+  border-style: double;
+  border-block-width: 1px;
+  border-color: black;
+}
+
+.article-main-text {
+  word-wrap: break-word;
+  border-style: double;
+  border-block-width: 1px;
+  border-color: black;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #b9b7b7;
+}
+
+.article-main-text > p {
+  color: black;
+}
+
+
 .footer {
   background-color: rgb(90, 14, 43);
   color: rgb(238, 202, 217);
@@ -40,7 +90,8 @@
 .header {
   color: rgb(119, 22, 59);
   font-size: 23px;
-  padding-bottom: 40px;
+  margin-top: 80px;
+  padding-bottom: 20px;
 }
 
 .home {
@@ -63,13 +114,13 @@ color: rgb(110, 22, 56);
   justify-content: space-evenly;
   border: 2px;
   margin: 10px;
-  max-width: 572px;
+  max-width: 580px;
   padding-top: 48px;
   padding-left: 160px;
   padding-right: 160px;
   padding-bottom: 20px;
   margin-bottom: 60px;
-  border-style: solid;
+  border-style: double;
   border-color: rgb(37, 4, 56);
   border-radius: 25px;
   background-color: rgb(238, 202, 217);
@@ -81,7 +132,23 @@ color: rgb(110, 22, 56);
 
 .insidetext {
 word-wrap: break-word;
+}
 
+.intro-text {
+  word-wrap: break-word;
+  border-style: double;
+  border-block-width: 1px;
+  border-color: black;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #78797a;
+  font-weight: 580;
 }
 
 .link-mainpage, .link-mainpage:visited {
@@ -100,13 +167,8 @@ word-wrap: break-word;
   text-decoration: none;
 }
 
-.article-header-img {
-  max-height: 450px;
-  min-height: 300px;
-}
-
 .sectionimagetext {
-  z-index: 100;
+  z-index: 90;
   position: absolute; 
    top: 68px; 
    left: 0; 
@@ -126,7 +188,8 @@ word-wrap: break-word;
   margin-bottom: 20px;
   object-fit: cover;
   border-style: solid;
-  border-color: rgb(37, 4, 56);
+  border-color: black;
+  border-width: 1pz;
   border-radius: 25px;
 }
 
@@ -136,6 +199,7 @@ word-wrap: break-word;
 }
 
 .topbar{
+  z-index: 100;
   position: fixed;
   top: 0;
   width: 100%;
