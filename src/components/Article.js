@@ -21,7 +21,7 @@ class Article extends Component {
                         <img className="article-header-img" src={require(`../images/${title.title}.jpg`)}></img>
                         <div className="article-main-body">
                             <Intro text="testtesttest"/>
-                       <ArticleText text="testestestesttestestestesttestestestesttestestestesttestestestesttestestestesttestestestesttestestestest"/>
+                       <ArticleText title ={title.title} text="testestestesttestestestesttestestestesttestestestesttestestestesttestestestesttestestestesttestestestest"/>
                         TEXT 1
 
                         IMAGE
