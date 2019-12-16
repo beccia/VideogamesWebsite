@@ -4,12 +4,11 @@ import HorizontalImages from './HorizontalImages';
 const ArticleText = (props) => {
     return (
     <div className="article-main-text">
-<p>{props.text}</p>
+<p>{props.text1}</p>
 <HorizontalImages number="0" title={props.title}/>
-<p>{props.text}</p>
-{/* <img className="article-img" src={require(`../images/${props.secondimage}.jpg`)}></img>
-<p>{props.text}</p>
-<img className="article-img" src={require(`../images/${props.thirdimage}.jpg`)}></img> */}
+<p>{props.text2}</p>
+<HorizontalImages number="1" title={props.title}/>
+<p>{props.text3}</p>
     </div>
     )
   }

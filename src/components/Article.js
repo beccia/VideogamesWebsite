@@ -3,6 +3,7 @@ import Header from './Header';
 import Intro from './Intro';
 import ArticleText from './ArticleText';
 import data from '../data/data.json';
+import { DialogTitle } from '@material-ui/core';
 
 class Article extends Component {
     state = data;
@@ -21,7 +22,7 @@ class Article extends Component {
                         <img className="article-header-img" src={require(`../images/${title.title}.jpg`)}></img>
                         <div className="article-main-body">
                             <Intro text="testtesttest"/>
-                       <ArticleText title ={title.title} text="testestestesttestestestesttestestestesttestestestesttestestestesttestestestesttestestestesttestestestest"/>
+                       <ArticleText title ={title.title} text1={title.text[0]} text2={title.text[1]} text3={title.text[2]}/>
                         TEXT 1
 
                         IMAGE

@@ -11,7 +11,8 @@
             "title": "Yakuza_0",
             "subtitle": "Streetfights, karaoke & hostess clubs",
          "name": "Yakuza 0",
-         "images": [[{"title": "yakuza1", "text": "test1"}, {"title":"yakuza2", "text": "test2"}, {"title":"yakuza3", "text":"test3"}], []]
+         "images": [[{"title": "yakuza1", "text": "test1"}, {"title":"yakuza2", "text": "test2"}, {"title":"yakuza3", "text":"test3"}], [{"title": "yakuza1", "text": "test1"}, {"title":"yakuza2", "text": "test2"}, {"title":"yakuza3", "text":"test3"}]],
+         "text": [["testestetetstetste"], ["yaddaydaydydyaydaa"], ["testestetetstetste"]]
         },
         {"type":"reviews",
             "title": "Dragon_Quest_XI",

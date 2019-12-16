@@ -3,6 +3,7 @@ import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
 import { makeStyles } from '@material-ui/core/styles';
+import withWidth, { isWidthUp } from '@material-ui/core/withWidth';
 import data from '../data/data.json';
 
 const useStyles = makeStyles(theme => ({
@@ -23,16 +24,33 @@ const useStyles = makeStyles(theme => ({
     },
   }));
 
+
 const HorizontalImages = (props) => {
     const classes = useStyles();
   console.log(data.articles.filter(item => item.title == props.title));
-  console.log(props.title);
+  console.log(props.width);
+  const getGridListCols = () => {
+    if (isWidthUp('xl', props.width)) {
+      return 3;
+    }
+
+    if (isWidthUp('lg', props.width)) {
+      return 3;
+    }
+
+    if (isWidthUp('md', props.width)) {
+      return 2;
+    }
+
+    return 1;
+  }
+  console.log(getGridListCols())
     return (
       <div className={classes.root}>
-        <GridList className={classes.gridList} cellHeight="360" cols={2.5}>
+        <GridList className={classes.gridList} cellheight="auto" cols={getGridListCols()}>
           {data.articles.filter(item => item.title == props.title)[0].images[props.number].map(img => (
-            <GridListTile  key={img.title}>
-              <img src={require(`../images/${img.title}.jpg`)}/>
+            <GridListTile key={img.title}>
+              <img className ="article-img" src={require(`../images/${img.title}.jpg`)}/>
               <GridListTileBar title={img.text}
               />
             </GridListTile>
@@ -41,4 +59,4 @@ const HorizontalImages = (props) => {
       </div>
     );
   }
-export default HorizontalImages;
+export default withWidth()(HorizontalImages);
