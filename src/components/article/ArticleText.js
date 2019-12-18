@@ -1,5 +1,5 @@
 import React from 'react';
-import HorizontalImages from './HorizontalImages';
+import HorizontalImages from '../HorizontalImages';
 
 const ArticleText = (props) => {
     return (

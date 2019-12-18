@@ -28,7 +28,7 @@
 }
 
 .article-header-img {
-  max-height: 35vh;
+  max-height: 45vh;
   min-height: 15vh;
   border-style: double;
   border-block-width: 1px;
@@ -207,7 +207,7 @@ word-wrap: break-word;
   object-fit: contain;
 }
 
-.topbar{
+.topbar {
   z-index: 100;
   position: fixed;
   top: 0;
@@ -218,6 +218,12 @@ word-wrap: break-word;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+}
+
+.verdict {
+  display:flexbox;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 p {

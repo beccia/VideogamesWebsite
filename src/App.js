@@ -1,11 +1,11 @@
 import React from 'react';
 import { Component} from 'react';
 import { Route } from 'react-router-dom';
-import Home from './components/Home';
-import Article from './components/Article';
+import Home from './components/page/Home';
+import Article from './components/article/Article';
 import ArticleContainer from './components/ArticleContainer';
-import NavBar from './components/NavBar';
-import Footer from './components/Footer';
+import NavBar from './components/page/NavBar';
+import Footer from './components/page/Footer';
 import './App.css';
 
 
