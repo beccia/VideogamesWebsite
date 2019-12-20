@@ -44,7 +44,7 @@ align-items: center;
 
 .article-img {
   max-height: 80vh;
-  min-height: 10vh;
+  min-height: 30vh;
   border-block-width: 1px;
   border-color: black;
   object-fit: fill;
@@ -243,7 +243,6 @@ align-items: center;
   display: flex;
   flex-direction: column;
   width: 85%;
-
 
   word-wrap: break-word;
 

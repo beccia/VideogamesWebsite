@@ -27,29 +27,44 @@ const useStyles = makeStyles(theme => ({
 
 const HorizontalImages = (props) => {
     const classes = useStyles();
-  console.log(data.articles.filter(item => item.title == props.title));
-  console.log(props.width);
-  const getGridListCols = () => {
-    if (isWidthUp('xl', props.width)) {
-      return 3;
+  
+    const getGridListCols = () => {
+     if (isWidthUp('xl', props.width)) {
+       return 3;
+      }
+
+      if (isWidthUp('lg', props.width)) {
+        return 3;
+      }
+
+      if (isWidthUp('md', props.width)) {
+        return 2;
+      }
+
+     return 1;
     }
 
-    if (isWidthUp('lg', props.width)) {
-      return 3;
-    }
+    const getGridListTilerows = () => {
+        if (isWidthUp('xl', props.width)) {
+          return 2;
+         }
+   
+         if (isWidthUp('lg', props.width)) {
+           return 2;
+         }
+   
+         if (isWidthUp('md', props.width)) {
+           return 2;
+         }
+   
+        return 1;
+       }
 
-    if (isWidthUp('md', props.width)) {
-      return 2;
-    }
-
-    return 1;
-  }
-  console.log(getGridListCols())
     return (
       <div className={classes.root}>
         <GridList className={classes.gridList} cellheight="auto" cols={getGridListCols()}>
           {data.articles.filter(item => item.title == props.title)[0].images[props.number].map(img => (
-            <GridListTile key={img.title}>
+            <GridListTile rows={getGridListTilerows()} key={img.title}>
               <img className ="article-img" src={require(`../images/${img.title}.jpg`)}/>
               <GridListTileBar rows={2} height="" title={img.text}
               />
