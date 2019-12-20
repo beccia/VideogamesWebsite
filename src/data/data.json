@@ -11,6 +11,12 @@
             "title": "Yakuza_0",
             "subtitle": "Streetfights, karaoke & hostess clubs",
          "name": "Yakuza 0",
+         "score": "8",
+         "conclusion": "Great stuff!",
+         "gprating": 3.5,
+         "strating": 4.0,
+         "imrating": 3.5,
+         "virating": 4.5,
          "images": [[{"title": "yakuza1", "text": "test1"}, {"title":"yakuza2", "text": "test2"}, {"title":"yakuza3", "text":"test3"}], [{"title": "yakuza1", "text": "test1"}, {"title":"yakuza2", "text": "test2"}, {"title":"yakuza3", "text":"test3"}]],
          "text": [["testestetetstetste"], ["yaddaydaydydyaydaa"], ["testestetetstetste"]]
         },

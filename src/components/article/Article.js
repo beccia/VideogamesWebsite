@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../Header';
 import Intro from './Intro';
+import Verdict from '../verdict/Verdict';
 import ArticleText from './ArticleText';
 import data from '../../data/data.json';
 import { DialogTitle } from '@material-ui/core';
@@ -9,6 +10,13 @@ class Article extends Component {
     state = data;
 
     render() {
+        const getConclusion = (article) => {
+            if (article.type != "reviews") {
+                return article.conclusion
+            } else {
+               return <Verdict conclusion={article.conclusion} subratings={[article.gprating, article.strating, article.imrating, article.virating]} score={article.score}/>
+            }
+        }
         const {handle} = this.props.match.params;
         return (
             <div className ="article">
@@ -22,22 +30,15 @@ class Article extends Component {
                         <img className="article-header-img" src={require(`../../images/${title.title}.jpg`)}></img>
                         <div className="article-main-body">
                             <Intro text="testtesttest"/>
-                       <ArticleText title ={title.title} text1={title.text[0]} text2={title.text[1]} text3={title.text[2]}/>
-                        TEXT 1
-
-                        IMAGE
-                        TEXT 2
-
-                        IMAGE
-                        VERDICT 
-                        if review SCOREBOX
+                            <ArticleText title ={title.title} text1={title.text[0]} text2={title.text[1]} text3={title.text[2]}/>
+                            <p className="header">Conclusion:</p>
+                            {getConclusion(title)}
+                            </div>
                         </div>
-                    </div>
                 })}
 
             </div>
         );
     }
 }
-
 export default Article;
