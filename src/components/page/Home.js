@@ -11,8 +11,10 @@ const Home = () => {
                 <Header text="Home" />
                 </h1>
                 <div className="article-main-body">
+                    <div className="section-img-container">
                     <SectionSelectImage domain="reviews" title="reviews"/>
                     <SectionSelectImage domain="articles" title="articles"/>
+                    </div>
                 {/* <Link className="link-mainpage" to="/reviews" >Reviews</Link>  <br/>
                 <Link className="link-mainpage" to="/articles" >Articles</Link> */}
                 <div className="article-main-text">
