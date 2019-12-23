@@ -28,41 +28,9 @@ const useStyles = makeStyles(theme => ({
 const HorizontalImages = (props) => {
     const classes = useStyles();
   
-    const getGridListCols = () => {
-     if (isWidthUp('xl', props.width)) {
-       return 3;
-      }
-
-      if (isWidthUp('lg', props.width)) {
-        return 3;
-      }
-
-      if (isWidthUp('md', props.width)) {
-        return 2;
-      }
-
-     return 1;
-    }
-
-    const getGridListTilerows = () => {
-        if (isWidthUp('xl', props.width)) {
-          return 2;
-         }
-   
-         if (isWidthUp('lg', props.width)) {
-           return 2;
-         }
-   
-         if (isWidthUp('md', props.width)) {
-           return 2;
-         }
-   
-        return 1;
-       }
-
     return (
       <div className={classes.root}>
-        <GridList className={classes.gridList} cellheight="auto" cols={getGridListCols()}>
+        <GridList spacing={1} className={classes.gridList} cellheight="auto" cols={getGridListCols()}>
           {data.articles.filter(item => item.title == props.title)[0].images[props.number].map(img => (
             <GridListTile rows={getGridListTilerows()} key={img.title}>
               <img className ="article-img" src={require(`../images/${img.title}.jpg`)}/>
@@ -73,5 +41,43 @@ const HorizontalImages = (props) => {
         </GridList>
       </div>
     );
+
+    const getGridListCols = () => {
+        if (isWidthUp('xl', props.width)) {
+          return 3;
+         }
+   
+         if (isWidthUp('lg', props.width)) {
+           return 3;
+         }
+   
+         if (isWidthUp('md', props.width)) {
+           return 2;
+         }
+   
+        return 1;
+       }
+   
+       const getGridListTilerows = () => {
+           if (isWidthUp('xl', props.width)) {
+             return 2;
+            }
+      
+            if (isWidthUp('lg', props.width)) {
+              return 2;
+            }
+      
+            if (isWidthUp('md', props.width)) {
+              return 2;
+            }
+   
+            if (isWidthUp('sm', props.width)) {
+               return 2;
+             }
+           return 1;
+          }
+
+
   }
-export default withWidth()(HorizontalImages);
+
+  export default withWidth()(HorizontalImages);

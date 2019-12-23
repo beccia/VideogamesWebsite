@@ -3,6 +3,7 @@ import Header from './Header';
 import SelectionImage from './SelectionImage';
 import {Link} from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
+import withWidth, { isWidthUp } from '@material-ui/core/withWidth';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
@@ -12,25 +13,63 @@ class ArticleContainer extends Component {
     state = data
 
     render() {
+      const getGridListCols = () => {
+        if (isWidthUp('xl', this.props.width)) {
+          return 3;
+         }
+   
+         if (isWidthUp('lg', this.props.width)) {
+           return 3;
+         }
+   
+         if (isWidthUp('md', this.props.width)) {
+           return 2;
+         }
+         if (isWidthUp('sm', this.props.width)) {
+          return 2;
+        }
+   
+        return 1;
+       }
+
+       const getGridListTilerows = () => {
+        if (isWidthUp('xl', this.props.width)) {
+          return 2;
+         }
+   
+         if (isWidthUp('lg', this.props.width)) {
+           return 2;
+         }
+   
+         if (isWidthUp('md', this.props.width)) {
+           return 2;
+         }
+
+         if (isWidthUp('sm', this.props.width)) {
+            return 2;
+          }
+        return 1;
+       }
+   
       const {handle} = this.props.match.params;
         return (
-            <div>
-              <div className="header">
-                <h1>
-                  <Header text={handle.toUpperCase()}/>
+            <div className="article">
+                <h1 className="header">
+                  <Header  text={handle.toUpperCase()}/>
                 </h1>
-              </div>
               <br/>
-              <GridList cellHeight={260} className="gridList">
-                {this.state.articles.filter(item => item.type == handle).map(article=> (
-                <GridListTile key={article.title}>
+              <div className="articlegrid">
+              <GridList cellHeight={"auto"} cols={getGridListCols()}>
+                {data.articles.filter(item => item.type == handle).map(article=> (
+                <GridListTile rows={getGridListTilerows()} key={article.title} rows={3}>
                   <SelectionImage title={article.title} domain={handle}/>
-                  <GridListTileBar title={article.name} subtitle={article.subtitle}/>
+                  <GridListTileBar title={article.name} subtitle={article.subtitle} />
                 </GridListTile>))}
               </GridList>
+              </div>
               </div>
         );
     }
 }
 
-export default ArticleContainer;
+export default withWidth()(ArticleContainer);

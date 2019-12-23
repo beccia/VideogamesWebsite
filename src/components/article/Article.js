@@ -12,7 +12,9 @@ class Article extends Component {
     render() {
         const getConclusion = (article) => {
             if (article.type != "reviews") {
-                return article.conclusion
+                return <div className="verdict-article"><div><p>{article.conclusion}</p>
+                </div>
+                </div>
             } else {
                return <Verdict conclusion={article.conclusion} subratings={[article.gprating, article.strating, article.imrating, article.virating]} score={article.score}/>
             }
@@ -29,7 +31,7 @@ class Article extends Component {
                         </h1>
                         <img className="article-header-img" src={require(`../../images/${title.title}.jpg`)}></img>
                         <div className="article-main-body">
-                            <Intro text="testtesttest"/>
+                            <Intro text="testteyjgggggggggggggggggkgksttest"/>
                             <ArticleText title ={title.title} text1={title.text[0]} text2={title.text[1]} text3={title.text[2]}/>
                             <p className="header">Conclusion:</p>
                             {getConclusion(title)}
