@@ -17,7 +17,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(10px + 1vmin);
   color: white;
   padding:0;
   margin:0;
@@ -68,7 +68,7 @@
 
 .article-main-body {
   max-width: 90vw;
-  background-color: #31353d;
+  background-color: #3c4047;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -87,6 +87,7 @@
 
 .article-main-text {
   word-wrap: break-word;
+  text-align: justify;
   border-style: double;
   border-block-width: 1px;
   border-color: black;
@@ -100,7 +101,8 @@
 
 .article-main-text > p {
   color: black;
-  font-size: calc(8px + 1vmin);
+  font-size: calc(9px + 1vmin);
+  padding: 10px;
 }
 
 .footer {
@@ -116,6 +118,7 @@
   font-size: 11px;
   z-index: 92;
 }
+
 
 .header {
   color: rgb(119, 22, 59);

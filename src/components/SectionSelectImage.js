@@ -6,7 +6,7 @@ const SectionSelectImage = (props) => {
 {
         return (
             <div className="sectionselect">
-<Link to={`./${props.domain}`}><img className="sectionselect-img" src={require(`../images/${props.title}.jpg`)}></img></Link>
+<Link to={`./sections/${props.domain}`}><img className="sectionselect-img" src={require(`../images/${props.title}.jpg`)}></img></Link>
             </div>
         );
     }
