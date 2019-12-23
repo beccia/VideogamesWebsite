@@ -39,7 +39,7 @@
 }
 
 .articlegrid {
-  max-width: 77vw;
+  max-width: 71vw;
   min-width: 50vw;
   margin-bottom: 46px;
   object-fit: contain;
@@ -95,14 +95,12 @@
   padding-bottom: 10px;
   margin-top: 20px;
   margin-bottom: 10px;
-  /* margin-left: 0.3vw;
-  margin-right: 0.3vw; */
   background-color: #b9b7b7;
 }
 
 .article-main-text > p {
   color: black;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(8px + 1vmin);
 }
 
 .footer {
@@ -121,14 +119,15 @@
 
 .header {
   color: rgb(119, 22, 59);
-  font-size: 26px;
+  font-size: calc(20px + 1vmin);
   padding-top: 54px;
   padding-bottom: 20px;
+  word-wrap: break-word;
 }
 
 .header, p {
   color: rgb(119, 22, 59);
-  font-size: 26px;
+  font-size: calc(18px + 1vmin);
   margin-top: 18px;
   padding-top: 9px;
   padding-bottom: 1px;
@@ -148,11 +147,12 @@
   /* margin-left: 20px;
   margin-right: 20px; */
   background-color: #78797a;
+  font-size: calc(10px + 1vmin);
 }
 
 .intro-text>p {
   word-wrap: break-word;
-  font-size: calc(12px + 2vmin);
+  font-size: calc(10px + 1vmin);
   font-weight: 580;
 }
 
@@ -243,7 +243,6 @@
   flex-direction: row;
   flex-flow: row wrap;
   flex-wrap: nowrap;
-
   word-wrap: break-word;
   border-style: double;
   border-block-width: 1px;
@@ -254,8 +253,6 @@
   padding-bottom: 10px;
   margin-top: 20px;
   margin-bottom: px;
-  /* margin-left: 20px;
-  margin-right: 20px; */
   background-color: #78797a;
   font-weight: 580;
 }
@@ -270,7 +267,6 @@
   justify-content: center;
   align-content: center;
   align-items: center;
-
   word-wrap: break-word;
   border-style: double;
   border-block-width: 1px;
@@ -290,9 +286,7 @@
   flex-wrap: wrap;
   align-items: center;
   width: 85%;
-
   word-wrap: break-word;
-
   border-style: double;
   border-block-width: 1px;
   border-color: black;
@@ -302,7 +296,7 @@
 
 .verdict-text-container>p {
   width: 70%;
-  font-size: calc(8px + 2vmin);
+  font-size: calc(10px + 1vmin);
   word-wrap: break-word;
 }
 

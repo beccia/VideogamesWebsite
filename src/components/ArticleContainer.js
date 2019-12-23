@@ -61,7 +61,7 @@ class ArticleContainer extends Component {
               <div className="articlegrid">
               <GridList cellHeight={"auto"} cols={getGridListCols()}>
                 {data.articles.filter(item => item.type == handle).map(article=> (
-                <GridListTile rows={getGridListTilerows()} key={article.title} rows={3}>
+                <GridListTile rows={getGridListTilerows()} key={article.title}>
                   <SelectionImage title={article.title} domain={handle}/>
                   <GridListTileBar title={article.name} subtitle={article.subtitle} />
                 </GridListTile>))}

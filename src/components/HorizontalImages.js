@@ -27,20 +27,6 @@ const useStyles = makeStyles(theme => ({
 
 const HorizontalImages = (props) => {
     const classes = useStyles();
-  
-    return (
-      <div className={classes.root}>
-        <GridList spacing={1} className={classes.gridList} cellheight="auto" cols={getGridListCols()}>
-          {data.articles.filter(item => item.title == props.title)[0].images[props.number].map(img => (
-            <GridListTile rows={getGridListTilerows()} key={img.title}>
-              <img className ="article-img" src={require(`../images/${img.title}.jpg`)}/>
-              <GridListTileBar rows={2} height="" title={img.text}
-              />
-            </GridListTile>
-          ))}
-        </GridList>
-      </div>
-    );
 
     const getGridListCols = () => {
         if (isWidthUp('xl', props.width)) {
@@ -78,6 +64,22 @@ const HorizontalImages = (props) => {
           }
 
 
+  
+    return (
+      <div className={classes.root}>
+        <GridList spacing={1} className={classes.gridList} cellheight="auto" cols={getGridListCols()}>
+          {data.articles.filter(item => item.title == props.title)[0].images[props.number].map(img => (
+            <GridListTile rows={getGridListTilerows()} key={img.title}>
+              <img className ="article-img" src={require(`../images/${img.title}.jpg`)}/>
+              <GridListTileBar rows={2} height="" title={img.text}
+              />
+            </GridListTile>
+          ))}
+        </GridList>
+      </div>
+    );
+
+    
   }
 
   export default withWidth()(HorizontalImages);
