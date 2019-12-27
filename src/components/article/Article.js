@@ -31,7 +31,7 @@ class Article extends Component {
                         </h1>
                         <img className="article-header-img" src={require(`../../images/${title.title}.jpg`)}></img>
                         <div className="article-main-body">
-                            <Intro text="testteyjgggggggggggggggggkgksttest"/>
+                            <Intro text={title.intro}/>
                             <ArticleText title ={title.title} text1={title.text[0]} text2={title.text[1]} text3={title.text[2]}/>
                             <p className="header">Conclusion:</p>
                             {getConclusion(title)}
