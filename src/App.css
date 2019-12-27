@@ -23,6 +23,22 @@
   margin:0;
 }
 
+.about-img {
+  max-height: 80vh;
+  min-height: 30vh;
+  border: black;
+  border-style: double;
+  background-color: #3c4047;
+  border-block-width: 2px;
+  object-fit: fill;
+  padding: 0px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  justify-self: center;
+  max-height: 35vh;
+  max-width: 83vw;
+}
+
 .article {
   justify-self: center;
   display: flex;
