@@ -113,6 +113,7 @@
   margin-top: 20px;
   margin-bottom: 10px;
   background-color: #b9b7b7;
+  white-space: pre-wrap;
 }
 
 .article-main-text > p {
@@ -295,6 +296,11 @@
   padding: 5px;
   background-color: #78797a;
   font-weight: 580;
+  
+}
+
+.verdict-article>p {
+  font-size: calc(10px + 1vmin);
 }
 
 
@@ -311,6 +317,7 @@
   border-color: black;
   background-color: #b9b7b7;
   padding: 10px;
+  
 }
 
 .verdict-text-container>p {

@@ -12,8 +12,7 @@ class Article extends Component {
     render() {
         const getConclusion = (article) => {
             if (article.type != "reviews") {
-                return <div className="verdict-article"><div><p>{article.conclusion}</p>
-                </div>
+                return <div className="verdict-article"><p>{article.conclusion}</p>
                 </div>
             } else {
                return <Verdict conclusion={article.conclusion} subratings={[article.gprating, article.strating, article.imrating, article.virating]} score={article.score}/>
