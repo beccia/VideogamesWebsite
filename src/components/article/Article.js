@@ -11,11 +11,12 @@ class Article extends Component {
 
     render() {
         const getConclusion = (article) => {
+            var text = article.conclusion.toString().replace(/\\n/g, '\n\n');
             if (article.type != "reviews") {
-                return <div className="verdict-article"><p>{article.conclusion}</p>
+                return <div className="verdict-article"><p>{text}</p>
                 </div>
             } else {
-               return <Verdict conclusion={article.conclusion} subratings={[article.gprating, article.strating, article.imrating, article.virating]} score={article.score}/>
+               return <Verdict conclusion={text} subratings={[article.gprating, article.strating, article.imrating, article.virating]} score={article.score}/>
             }
         }
         const {handle} = this.props.match.params;

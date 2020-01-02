@@ -71,7 +71,7 @@ const HorizontalImages = (props) => {
           {data.articles.filter(item => item.title == props.title)[0].images[props.number].map(img => (
             <GridListTile rows={getGridListTilerows()} key={img.title}>
               <img className ="article-img" src={require(`../images/${img.title}.jpg`)}/>
-              <GridListTileBar rows={2} height="" title={img.text}
+              <GridListTileBar className={classes.subtitle} rows={2} height="" subtitle={img.text}
               />
             </GridListTile>
           ))}
