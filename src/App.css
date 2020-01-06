@@ -4,6 +4,7 @@
   align-items: center;
   padding:0;
   margin:0;
+  font-family: palatino;
 }
 
 .App-logo {
@@ -229,7 +230,8 @@
   border-block-width: 1px;
   border-color: black;
   padding: 4vh;
-  margin: 1vh;
+  margin-left: 3px;
+  margin-right: 5px;
   color: rgb(119, 22, 59);
   background-image: url("./images/star.jpg");
   background-position: center; 
