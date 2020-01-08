@@ -186,6 +186,13 @@
   padding-bottom: 180px;
 }
 
+.score {
+  display: flex;
+  margin: auto;
+  width:50%;
+ align-self: center;
+}
+
 .nav-item, .nav-item:visited {
   padding-left: 15px;
   padding-right: 15px;
@@ -226,6 +233,7 @@
   width: 15%;
   max-width: 1.4vw;
   align-self: center;
+  align-content: center;
   border-style: double;
   border-block-width: 1px;
   border-color: black;
@@ -237,6 +245,9 @@
   background-position: center; 
   background-size: cover;
   background-repeat: no-repeat;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: flex;
 }
 
 .subscores {
