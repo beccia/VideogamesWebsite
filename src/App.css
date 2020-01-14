@@ -232,6 +232,8 @@
 .scorefield {
   width: 15%;
   max-width: 1.4vw;
+  display: flex;
+  flex-direction: column;
   align-self: center;
   align-content: center;
   border-style: double;
