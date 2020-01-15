@@ -191,6 +191,7 @@
   width:100%;
  align-self: center;
  justify-self: center;
+ font-weight: 500;
 }
 
 .nav-item, .nav-item:visited {
