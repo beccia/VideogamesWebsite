@@ -175,6 +175,8 @@
   word-wrap: break-word;
   font-size: calc(10px + 1vmin);
   font-weight: 580;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
 }
 
 .link-mainpage, .link-mainpage:visited {
@@ -309,7 +311,8 @@
   border-color: black;
   margin-top: 5px;
   margin-bottom: 10px;  
-  padding: 5px;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
   background-color: #78797a;
   font-weight: 580;
   
@@ -339,6 +342,8 @@
 .verdict-text-container>p {
   font-size: calc(10px + 1vmin);
   word-wrap: break-word;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
 }
 
 p {
