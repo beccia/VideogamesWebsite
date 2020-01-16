@@ -6,9 +6,11 @@ render () {
     const {handle} = this.props.match.params;
     console.log(handle);
     return (
-        <div>
-   <img className ="article-img" src={require(`../../images/${handle}`)}/>
-    </div>
+        <div className="image-view-container">
+            <div className="image-view-body">
+                <img className ="article-img" src={require(`../../images/${handle}`)}/>
+            </div>
+        </div>
     )
   }
 
