@@ -9,6 +9,7 @@ import AboutMe from './components/page/AboutMe';
 import AboutThis from './components/page/AboutThis';
 import Footer from './components/page/Footer';
 import './App.css';
+import ImageView from './components/article/ImageView';
 
 
 class App extends Component {
@@ -23,6 +24,7 @@ class App extends Component {
         <Route exact path="/sections/articles/:handle" component={Article} />
         <Route exact path="/about_this" component={AboutThis} />
         <Route exact path="/about_me" component={AboutMe} />
+        <Route exact path="/images/:handle" component={ImageView} />
         <Footer/>
       </div>
     </div>

@@ -4,6 +4,7 @@ import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
 import { makeStyles } from '@material-ui/core/styles';
 import withWidth, { isWidthUp } from '@material-ui/core/withWidth';
+import {Link} from 'react-router-dom';
 import data from '../data/data.json';
 
 const useStyles = makeStyles(theme => ({
@@ -71,8 +72,10 @@ const HorizontalImages = (props) => {
           {data.articles.filter(item => item.title == props.title)[0].images[props.number].map(img => (
             <GridListTile rows={getGridListTilerows()} key={img.title}>
               <img className ="article-img" src={require(`../images/${img.title}.jpg`)}/>
+              <Link to={`/images/${img.title}.jpg`}>
               <GridListTileBar className={classes.subtitle} rows={2} height="" subtitle={img.text}
               />
+                </Link>
             </GridListTile>
           ))}
         </GridList>
