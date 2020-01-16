@@ -222,10 +222,11 @@
 }
 
 .nav-item, .nav-item:visited {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: calc(5px + 1.4vmin);
+  padding-right:calc(5px + 1.4vmin);
   color: inherit;
   text-decoration: none;
+  font-size: calc(9px + 1vmin);
 }
 
 .section-img-container {
